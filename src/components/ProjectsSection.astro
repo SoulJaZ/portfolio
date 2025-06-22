@@ -3,23 +3,48 @@ import ProjectCard from '@components/ProjectCard.astro'
 import Typescript from '@assets/icons/typescript.astro';
 import React from '@assets/icons/react.astro';
 import Supabase from '@assets/icons/supabase.astro';
+import  Vscode from '@assets/icons/vscode.astro';
 import Tailwind from '@assets/icons/tailwind.astro';
+import Github from '@assets/icons/github.astro';
+import Javascript from '@assets/icons/javascript.astro';
+import Css from '@assets/icons/css.astro';
+import Node from '@assets/icons/node.astro';
+import Html from '@assets/icons/html.astro'
+import Firebase from '@assets/icons/firebase.astro'
 ---
 
 <section class="my-20">
   <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
   <hr class="mb-6 border-zinc-600">
 
-  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
-    <React />
-    <Supabase />
-    <Tailwind />
-    <Typescript />
+  <ProjectCard projectTitle="CHyper Hill" projectDescription="Aplicación web para cifrar y descifrar mensajes a tráves del método de Hill de cifrado." projectLink="https://cifrado-hill.vercel.app/" image="../../public/images/Cifrado_Hill.png">
+    
+    <Vscode />
+    <Html />
+    <Css />
+    <Javascript />
+    <Github />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
+  <ProjectCard projectTitle="Decoraciones en Yeso" projectDescription="Portal web que presenta servicios e información sobre Decoraciones en Yeso." projectLink="https://astro-decoraciones-en-yeso.vercel.app/" image="../../public/images/Decoraciones_en_Yeso.png">
+    <Vscode />
     <React />
-    <Supabase />
-    <Tailwind />
+    <Css />
+    <Javascript />
+    <Node />
+    <Github />
+    
+  </ProjectCard>
+
+
+  <ProjectCard projectTitle="POS FOODTRUCK" projectDescription="Punto de venta dígital para carritos de comidas rápidas." projectLink="https://pos-foodtruck.vercel.app/" image="../../public/images/POS-FOOD.png">
+    
+    <Firebase />
+    <Vscode />
+    <React />
+    <Css />
+    <Javascript />
+    <Node />
+    <Github />
   </ProjectCard>
 </section>
